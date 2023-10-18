@@ -27,9 +27,9 @@ export const reducer = (state, action) => {
         };
       }
       //if currentOperand is not null, then we want to add a digit to the current number
-      if (state.currentOperand.length < 10) {
+      if (state.currentOperand?.length < 10) {
         //if currentOperand is 0, then we want to replace it with the digit
-        if (state.currentOperand === "0") {
+        if (state.currentOperand === "0" || state.currentOperand === "00") {
           return {
             ...state,
             currentOperand: action.payload.digit,
