@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.App{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    .calculator{
+        background:url("https://i.imgur.com/JuNfNPX.png") no-repeat center center/cover;
+        border-radius: 10px;
+        border: 4px solid #FF9500;
+        box-shadow: 0 0 40px 0 rgba(0,0,0,0.5);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        gap: 20px;
+
+        .head{
+            display:flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            img{
+                width: 100px;
+                height: 50px;
+                mix-blend-mode: difference;
+            }
+            .solar{
+                width: 100px;
+                border-radius: 5px;
+                height: 40px;
+                background-color: #605f61;
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-gap: 1px;
+                overflow: hidden;
+                border: 3px inset black;
+                .cell{
+                    width: 100%;
+                    background-color: #413f44;
+                }
+            }
+        }
+        .screen{
+            font-family: 'Orbitron', sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: flex-end;
+            width: 100%;
+            height: 100px;
+            background-color: #656566;
+            color: rgb(3, 3, 3);
+            padding: 10px 20px;
+            text-align: right;
+            border-radius: 5px;
+            border: 5px inset black;
+            .screen__content__current{
+                font-size: 24px;
+            }
+
+        }
+        .buttons{
+            display:grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 5px;
+            button{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 20px;
+                font-size: 20px;
+                background-color: #FF9500;
+                color: white;
+                border: 1px solid white;
+                border-radius: 5px;
+                cursor: pointer;
+                &:hover{
+                    background-color: #FFA500;
+                }
+            }
+            .number{
+                background-color: #f0f0f0;
+                color: #000;
+                &:hover{
+                    background-color: #d0d0d0;
+                }
+            }
+            .clear{
+                background-color: #d9534f;
+                &:hover{
+                    background-color: #e05a57;
+                }
+            }
+            .equals{
+                background-color: #5cb85c;
+                &:hover{
+                    background-color: #62c462;
+                }
+            }
+        }
+    }
+}

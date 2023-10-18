@@ -1,3 +1,7 @@
+# Introduction
+
+This is a simple calculator built using React. It can perform basic arithmetic operations such as addition, subtraction, multiplication, division and mod. The calculator has a user-friendly interface and also supports keyboard input. The calculator is built using React components and useReducer hook. The calculator is responsive and can be used on any device. The calculator is hosted on Netlify and can be accessed using the following link: https://react-calculator-raghavendra.netlify.app/
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
